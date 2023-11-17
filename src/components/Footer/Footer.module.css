@@ -1,0 +1,81 @@
+.footerContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px; /* Adjust as needed */
+	background: #000211;
+	margin: auto !important;
+}
+
+.footerColumn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-shrink: 0;
+	color: #d9d9d9;
+	font-family: "Gilroy", sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	margin-left: 10rem;
+}
+
+.footerColumn:nth-child(1) {
+	width: 177px;
+	height: 154px;
+}
+
+.footerColumn:nth-child(2) {
+	width: 264px;
+	height: 154px;
+}
+
+.chainlyContainer {
+	color: #fff;
+	text-align: center;
+	font-family: "Gilroy-Bold", sans-serif;
+	font-size: 12.2vw; /* This will adjust the font size based on the viewport width */
+	font-style: normal;
+	font-weight: 900;
+	line-height: 1; /* 100% of the computed font-size */
+	text-transform: uppercase;
+	width: 100%; /* Take up the full width of the screen */
+	white-space: nowrap; /* Ensure the text doesn't wrap to the next line */
+	overflow: hidden; /* Hide overflow in case the text gets too large */
+	margin-bottom: 50px;
+}
+.a {
+	margin-bottom: 0.5em;
+}
+.copyright {
+	font-family: "Gilroy";
+	text-align: center;
+	margin-bottom: 1vw;
+}
+
+@media (max-width: 768px) {
+	.footerContainer {
+		flex-direction: column;
+		align-items: center; /* Center the columns on small screens */
+	}
+
+	.footerColumn {
+		margin-left: 0;
+		margin-bottom: 20px; /* Spacing between columns when they're stacked */
+		text-align: center; /* Center text in each column */
+		font-size: 3.5vw;
+	}
+
+	.chainlyContainer {
+		font-size: 8vw; /* Adjust font size for smaller screens */
+		margin-top: 20px; /* Spacing between footer columns and CHAINLY. STUDIO text */
+	}
+}
+@media (max-width: 550px) {
+	.footerContainer {
+		margin-bottom: -50px;
+	}
+	.footerColumn {
+		font-size: 5vw;
+	}
+}
