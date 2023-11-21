@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  mode: "jit",
-  content: ["./src/**/*.{html,js}"],
-  darkMode: "class",
+  content: [
+    "/index.html",
+    "./src/**/*.{html,js,jsx,tsx}"
+  ],
   theme: {
     colors: {
       brand: "#0169F0",
@@ -24,13 +25,12 @@ module.exports = {
         900: "#1e3a8a",
         950: "#172554",
       },
-    },
-
-    extend: {
-      backgroundColor: {
-        secondary: "#000211",
+      extend: {
+        backgroundColor: {
+          secondary: "#000211",
+        },
       },
     },
-  },
-  plugins: [],
-};
+    plugins: [],
+  }
+}
